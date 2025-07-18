@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS AdminLTE -->
-  <link rel="stylesheet" href="<?php echo base_url('themes/plugins'); ?>/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="<?php echo base_url('themes/dist'); ?>/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo site_url('themes/plugins'); ?>/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?php echo site_url('themes/dist'); ?>/css/adminlte.min.css">
 
   <!-- Custom CSS -->
   <style>
@@ -108,7 +108,7 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="<?php echo base_url('auth/login'); ?>"><b>Maharani</b> <br />Batik n' Tenun</a>
+      <a href="<?php echo site_url('auth/login'); ?>"><b>Maharani</b> <br />Batik n' Tenun</a>
     </div>
     <div class="card">
       <div class="card-body login-card-body">
@@ -143,7 +143,7 @@
 
         <?php 
         $inputs = session()->getFlashdata('inputs'); 
-        echo form_open(base_url('auth/proses_login')); 
+        echo form_open(site_url('auth/proses_login')); 
         ?>
 
         <div class="input-group mb-3">
@@ -187,7 +187,7 @@
         <div class="row">
           <div class="col-8">
             <p class="mb-0">
-              <a href="<?php echo base_url('auth/register'); ?>">Register</a>
+              <a href="<?php echo site_url('auth/register'); ?>">Register</a>
             </p>
           </div>  
           <div class="col-4">
@@ -200,9 +200,9 @@
     </div>
   </div>
 
-  <script src="<?php echo base_url('themes/plugins'); ?>/jquery/jquery.min.js"></script>
-  <script src="<?php echo base_url('themes/plugins'); ?>/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="<?php echo base_url('themes/dist'); ?>/js/adminlte.min.js"></script>
+  <script src="<?php echo site_url('themes/plugins'); ?>/jquery/jquery.min.js"></script>
+  <script src="<?php echo site_url('themes/plugins'); ?>/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo site_url('themes/dist'); ?>/js/adminlte.min.js"></script>
 
 </body>
 </html>
